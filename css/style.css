@@ -4025,3 +4025,39 @@ ol {
     display: none;
   }
 }
+
+
+
+ .menu-heading-section {
+      background: url('img/footer.png') center center/cover no-repeat;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    .menu-heading-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      /* dark overlay for readability */
+      z-index: 0;
+    }
+
+    .menu-heading-section h2 {
+      position: relative;
+      z-index: 1;
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: #ffffff;
+      margin: 0;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      border-bottom: 3px solid #ffffff;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
