@@ -16,7 +16,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
     rel="stylesheet">
-   <link href="https://fonts.bunny.net/css?family=amita:700" rel="stylesheet">
+ <link href="https://fonts.bunny.net/css?family=amita:700" rel="stylesheet">
 
   <!-- Css Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -30,6 +30,230 @@
   <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+<style>
+  .menu-heading-section {
+    background: url('img/footer.png') center center/cover no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+  }
+
+  .menu-heading-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* dark overlay for readability */
+    z-index: 0;
+  }
+
+  .menu-heading-section h2 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-bottom: 3px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  .shop {
+    padding-top: 29px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for readability */
+    border-radius: 12px;
+    margin-top: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-bottom: 1px dashed #ccc;
+  }
+
+  td {
+    padding: 8px 5px;
+  }
+
+  .item-name {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .dots {
+    width: 100%;
+    border-bottom: 1px dashed #999;
+    margin: 0 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .price {
+    white-space: nowrap;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .price.plus {
+    color: #ffcccb;
+  }
+</style>
+<style>
+  .shop {
+    padding-top: 29px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    color: #333;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-bottom: 1px dashed #999;
+  }
+
+  td {
+    padding: 8px 5px;
+  }
+
+  .item-name {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .dots {
+    width: 100%;
+    border-bottom: 1px dashed #999;
+    margin: 0 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .price {
+    white-space: nowrap;
+    text-align: right;
+    font-weight: 600;
+  }
+
+  /* For plus prices */
+  .price.plus {
+    color: #c55;
+  }
+
+
+  .section-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    /* or your preferred color */
+  }
+
+  body {
+
+    font-family: 'Amita', cursive;
+
+  }
+
+  h1 {
+    color: #fff0f3;
+    margin: 30px auto;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 8px double #d62828;
+    width: fit-content;
+    padding-bottom: 10px;
+
+    font-family: 'Amita', cursive;
+
+  }
+
+  h2 {
+
+    font-family: 'Amita', cursive;
+
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  .gallery img {
+    width: 350px;
+    height: 250px;
+    border: 8px solid #fff0f3;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(85%);
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+    border-color: #fcbf49;
+  }
+
+  footer {
+    background-color: #d62828;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+</style>
 
 <body>
   <!-- Page Preloder -->
@@ -46,7 +270,6 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-
   <div class="menu-heading-section">
     <br>
     <h2>Our Menu</h2>
@@ -62,7 +285,6 @@
 
       <div class="row">
 
-      
 
 
         <table>
@@ -371,175 +593,116 @@
     </h2>
 
     <br>
-    <div class="col-lg-8">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake1.jpg" alt="">
+
+</head>
+<body>
+  <div class="container my-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="row g-3">
+          <!-- Image items -->
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake1.jpg" alt="Cake 1" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake2.jpg" alt="">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake2.jpg" alt="Cake 2" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake3.jpg" alt="">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake3.jpg" alt="Cake 3" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic middle__pic">
-            <img src="img/cake4.jpg" alt="">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic middle__pic">
+              <img src="img/cake4.jpg" alt="Cake 4" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake5.jpg" alt="">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake5.jpg" alt="Cake 5" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake6.jpg" alt="">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake6.jpg" alt="Cake 6" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake7.jpg" alt="">
+
+          <!-- Continue similarly for all images -->
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake7.jpg" alt="Cake 7" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake8.jpg" alt="">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake8.jpg" alt="Cake 8" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake9.jpg" alt="">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake9.jpg" alt="Cake 9" class="img-fluid" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake10.png" alt="">
+
+          <!-- ... -->
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="instagram__pic">
+              <img src="img/cake10.png" alt="Cake 10" class="img-fluid" />
+            </div>
           </div>
+
+          <!-- Continue adding all remaining images the same way -->
+
+          <!-- Here are all remaining images in order -->
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake11.png" alt="Cake 11" class="img-fluid" /></div></div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake12.png" alt="Cake 13" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake13.png" alt="Cake 14" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake14.png" alt="Cake 15" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake15.png" alt="Cake 16" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake16.png" alt="Cake 17" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake17.png" alt="Cake 18" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake18.png" alt="Cake 19" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake19.png" alt="Cake 20" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake20.png" alt="Cake 21" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake21.png" alt="Cake 22" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake22.png" alt="Cake 23" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake23.png" alt="Cake 24" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake24.png" alt="Cake 25" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake25.png" alt="Cake 26" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake26.png" alt="Cake 27" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake27.png" alt="Cake 28" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake28.png" alt="Cake 29" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake29.png" alt="Cake 30" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake30.png" alt="Cake 31" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake31.png" alt="Cake 32" class="img-fluid" /></div></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6"><div class="instagram__pic"><img src="img/cake32.jpg" alt="Cake 33" class="img-fluid" /></div></div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake11.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake1.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake12.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake13.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake14.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake15.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake16.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake17.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake18.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake19.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake20.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake21.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake22.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake23.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake24.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake25.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake26.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake27.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake28.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake29.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake30.png" alt="">
-          </div>
-        </div>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-          <div class="instagram__pic">
-            <img src="img/cake31.png" alt="">
-          </div>
-        </div>
-        
       </div>
     </div>
- 
+  </div>
+
+  
+
+
 
    
-    
+
 
 
     <!-- Js Plugins -->
