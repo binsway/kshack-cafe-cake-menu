@@ -4061,3 +4061,120 @@ ol {
       display: inline-block;
       padding-bottom: 10px;
     }
+ .shop {
+            padding-top: 29px;
+          }
+
+          body {
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg');
+            /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+          }
+
+          .menu-container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            /* Dark overlay for readability */
+            border-radius: 12px;
+            margin-top: 40px;
+          }
+
+          h1 {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+          }
+
+          tr {
+            border-bottom: 1px dashed #ccc;
+          }
+
+          td {
+            padding: 8px 5px;
+          }
+
+          .item-name {
+            text-align: left;
+            white-space: nowrap;
+          }
+
+          .dots {
+            width: 100%;
+            border-bottom: 1px dashed #999;
+            margin: 0 8px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .price {
+            white-space: nowrap;
+            text-align: right;
+            font-weight: bold;
+          }
+
+          .price.plus {
+            color: #ffcccb;
+          }
+        </style>
+        <style>
+          .shop {
+            padding-top: 29px;
+          }
+
+          body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #fff;
+            color: #333;
+          }
+
+          table {
+            width: 100%;
+            border-collapse: collapse;
+          }
+
+          tr {
+            border-bottom: 1px dashed #999;
+          }
+
+          td {
+            padding: 8px 5px;
+          }
+
+          .item-name {
+            text-align: left;
+            white-space: nowrap;
+          }
+
+          .dots {
+            width: 100%;
+            border-bottom: 1px dashed #999;
+            margin: 0 8px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .price {
+            white-space: nowrap;
+            text-align: right;
+            font-weight: 600;
+          }
+
+          /* For plus prices */
+          .price.plus {
+            color: #c55;
+          }
