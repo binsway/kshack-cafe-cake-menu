@@ -1,0 +1,221 @@
+ .menu-heading-section {
+    background: url('img/footer.png') center center/cover no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+  }
+
+  .menu-heading-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* dark overlay for readability */
+    z-index: 0;
+  }
+
+  .menu-heading-section h2 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-bottom: 3px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  .shop {
+    padding-top: 29px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for readability */
+    border-radius: 12px;
+    margin-top: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-bottom: 1px dashed #ccc;
+  }
+
+  td {
+    padding: 8px 5px;
+  }
+
+  .item-name {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .dots {
+    width: 100%;
+    border-bottom: 1px dashed #999;
+    margin: 0 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .price {
+    white-space: nowrap;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .price.plus {
+    color: #ffcccb;
+  }
+
+  .shop {
+    padding-top: 29px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    color: #333;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-bottom: 1px dashed #999;
+  }
+
+  td {
+    padding: 8px 5px;
+  }
+
+  .item-name {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .dots {
+    width: 100%;
+    border-bottom: 1px dashed #999;
+    margin: 0 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .price {
+    white-space: nowrap;
+    text-align: right;
+    font-weight: 600;
+  }
+
+  /* For plus prices */
+  .price.plus {
+    color: #c55;
+  }
+
+
+  .section-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    /* or your preferred color */
+  }
+
+  body {
+
+    font-family: 'Amita', cursive;
+
+  }
+
+  h1 {
+    color: #fff0f3;
+    margin: 30px auto;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 8px double #d62828;
+    width: fit-content;
+    padding-bottom: 10px;
+
+    font-family: 'Amita', cursive;
+
+  }
+
+  h2 {
+
+    font-family: 'Amita', cursive;
+
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  .gallery img {
+    width: 350px;
+    height: 250px;
+    border: 8px solid #fff0f3;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(85%);
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+    border-color: #fcbf49;
+  }
+
+  footer {
+    background-color: #d62828;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
