@@ -14,10 +14,13 @@
     /*------------------
         Preloader
     --------------------*/
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
-    });
+   const isMobile = window.innerWidth <= 768;
+const delay = isMobile ? 0 : 200;
+
+$(window).on('load', function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(delay).fadeOut("slow");
+});
 
     /*------------------
         Background Set
